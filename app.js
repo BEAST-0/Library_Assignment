@@ -5,6 +5,8 @@ const book = require("./routes/bookroute");
 const app = new express();
 const path = require("path");
 
+const port = process.env.PORT || 3000;
+
 app.use(cors());
 app.use(express.json());
 
@@ -14,8 +16,8 @@ app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/frontend/index.html"));
 });
 
-app.listen("3000", () => {
-  console.log("Server started @ port 3000");
+app.listen(port, () => {
+  console.log("server is connected:", PORT);
 });
 
 app.use("/api/users", user);
