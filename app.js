@@ -20,5 +20,5 @@ app.listen(port, () => {
   console.log("server is connected:", port);
 });
 
-app.use("/api/users", user);
-app.use("/api/books", book);
+app.use("/users", user);
+app.use("/books", book);
