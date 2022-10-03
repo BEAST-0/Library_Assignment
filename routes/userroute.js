@@ -6,7 +6,7 @@ const app = new express();
 
 app.use(cors());
 
-UserRoutes.post("/api", (req, res) => {
+UserRoutes.post("/api/", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
@@ -24,7 +24,7 @@ UserRoutes.post("/api", (req, res) => {
   });
 });
 
-UserRoutes.get("/api", (req, res) => {
+UserRoutes.get("/api/", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
