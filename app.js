@@ -18,5 +18,5 @@ app.listen("3000", () => {
   console.log("Server started @ port 3000");
 });
 
-app.use("/users", user);
-app.use("/books", book);
+app.use("/api/users", user);
+app.use("/api/books", book);
