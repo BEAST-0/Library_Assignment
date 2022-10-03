@@ -17,7 +17,7 @@ app.get("/*", function (req, res) {
 });
 
 app.listen(port, () => {
-  console.log("server is connected:", PORT);
+  console.log("server is connected:", port);
 });
 
 app.use("/api/users", user);
