@@ -12,8 +12,6 @@ app.use(express.json());
 
 app.use(express.static("./dist/frontend"));
 
-app.use("/api/users", user);
-app.use("/api/books", book);
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/frontend/index.html"));
 });
@@ -21,3 +19,6 @@ app.get("/*", function (req, res) {
 app.listen(port, () => {
   console.log("server is connected:", port);
 });
+
+app.use("/api/users", user);
+app.use("/api/books", book);
