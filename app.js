@@ -12,8 +12,8 @@ app.use(express.json());
 
 app.use(express.static("./dist/frontend"));
 
-app.use("/api/users", user);
-app.use("/api/books", book);
+app.use('/api', user);
+app.use('/api', book);
 app.get("/*", function (req, res) {
   res.sendFile(path.join(__dirname + "/dist/frontend/index.html"));
 });
