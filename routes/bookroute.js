@@ -9,7 +9,7 @@ app.use(cors);
 
 // post
 
-Route.post("/api/addbook", (req, res) => {
+Route.post("/api/", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
@@ -31,7 +31,7 @@ Route.post("/api/addbook", (req, res) => {
 
 // Get
 
-Route.get("/api/getbook", (req, res) => {
+Route.get("/api/", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
@@ -46,7 +46,7 @@ Route.get("/api/getbook", (req, res) => {
 
 // get by id
 
-Route.get("/api/getbook/:id", (req, res) => {
+Route.get("/api/:id", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
@@ -65,7 +65,7 @@ Route.get("/api/getbook/:id", (req, res) => {
 
 // put
 
-Route.put("/api/updatebook/:id", (req, res) => {
+Route.put("/api/:id", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
@@ -95,7 +95,7 @@ Route.put("/api/updatebook/:id", (req, res) => {
 
 // Delete
 
-Route.delete("/api/delete/:id", (req, res) => {
+Route.delete("/api/:id", (req, res) => {
   res.header("Access-Control-Allow-Origin", "*");
   res.header("Access-Control-Allow-Methods", "POST, GET, PUT, DELETE");
 
